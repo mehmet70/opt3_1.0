@@ -75,18 +75,24 @@ public class Gerecht {
         java.util.Date yourDate2 = sdf.parse("2015-07-26");
         java.util.Date yourDate3 = sdf.parse("2021-07-26");
 
-        Gerecht gerecht2 = new Gerecht("pasta", "pasta", 400, 12, yourDate, true);
-        Gerecht gerecht3 = new Gerecht("friet", "aardappel", 700, 12, yourDate1, true);
-        Gerecht gerecht4 = new Gerecht("pannenkoek", "deeg", 900, 12, yourDate2, true);
-        Gerecht gerecht5 = new Gerecht("salade", "groente", 20, 12, yourDate3, true);
+        Gerecht gerecht2 = new Gerecht("Pasta", "pasta", 400, 12, yourDate, true);
+        Gerecht gerecht3 = new Gerecht("Friet", "aardappel", 700, 12, yourDate1, true);
+        Gerecht gerecht4 = new Gerecht("Pannenkoek", "deeg", 900, 12, yourDate2, true);
+        Gerecht gerecht5 = new Gerecht("Salade", "groente", 20, 12, yourDate3, true);
+        Gerecht gerecht6 = new Gerecht("Bami", "Mixed", 20, 12, yourDate3, true);
+        Gerecht gerecht7 = new Gerecht("Stampot", "groente", 20, 12, yourDate3, true);
+        Gerecht gerecht8 = new Gerecht("Erwten Soep", "Soep", 20, 12, yourDate3, true);
 
         allGerechten.add(gerecht2);
         allGerechten.add(gerecht3);
         allGerechten.add(gerecht4);
         allGerechten.add(gerecht5);
+        allGerechten.add(gerecht6);
+        allGerechten.add(gerecht7);
+        allGerechten.add(gerecht8);
     }
 
-    public static void gerechtToevoegen(Scanner scanner, Gebruiker gebruiker) throws ParseException {
+    public static void gerechtToevoegen(Scanner scanner, Gebruiker gebruiker ) throws ParseException {
 
         System.out.println("Wat is de naam van het gerecht?");
         scanner.nextLine();
@@ -111,12 +117,12 @@ public class Gerecht {
         Date date = new SimpleDateFormat("dd/MM/yyyy").parse(laatstGegeten);
 
         Gerecht gerecht = new Gerecht(naam, soort, calorieën, bereidingstijd, date, vegetarisch);
+        Observer.Notify(gebruiker);
         System.out.println("gerecht succesvol toegevoegd:");
         System.out.println("Gerecht gegevens:");
         System.out.println("|Naam: " + gerecht.getNaam() + " |Soort: " + gerecht.getSoort() + " |Calorieën: " + gerecht.getCalorieën() + " |Bereidingstijd: " + gerecht.getBereidingstijd() + " |Vegetarisch: " + gerecht.getVegetarisch() + " |Laatst Gegeten: " + gerecht.getLaatstGegeten());
         System.out.println(gerecht.getGezondHeidsLabel());
         allGerechten.add(gerecht);
-        Menu.startMenu(gebruiker);
 
     }
 
@@ -124,7 +130,7 @@ public class Gerecht {
         return allGerechten;
     }
 
-    public static void deleteGerecht(Gebruiker gebruiker) throws ParseException {
+    public static void deleteGerecht( Gebruiker gebruiker) throws ParseException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("kies het gerecht dat u wilt verwijderen");
         int teller = 0;
@@ -142,18 +148,24 @@ public class Gerecht {
                 System.out.println("2. Nee");
                 input = scanner.nextInt();
                 if (input.equals(1)){
-                    allGerechten.remove(gerecht);
+                    System.out.println(gerecht.getNaam());
+                   allGerechten.remove(gerecht);
                     Menu.startMenu(gebruiker);
                 }
                 if (input.equals(2)){
-                    deleteGerecht(gebruiker);
+
                 }
             }
         }
     }
-    public static void showAllGerechten(Gebruiker gebruiker){
+    public static void showAllGerechten(){
         for (Gerecht gerecht: allGerechten) {
             System.out.println("Naam: " + gerecht.getNaam() + " | soort: " + gerecht.soort + " | calorieën :" + gerecht.calorieën + " | Gezondheid :" + gerecht.gezondHeidsLabel + " | Bereidingstijd: " + gerecht.bereidingstijd + " | Vegetarisch: " + gerecht.vegetarisch + " | Laatst Gegeten: " + gerecht.laatstGegeten );
         }
     }
+
+    public static void Notify(){
+        System.out.println("Gegevens zijn opgeslagen!");
+    }
+
 }

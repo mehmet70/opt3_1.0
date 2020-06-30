@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59bc9cfa-fbce-4afa-9337-b0fa33e9b480" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test/com/company/WeekMenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/DagGerecht.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opt3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/opt3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/opt3/com/company/Gerecht.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/opt3/com/company/Gerecht.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/opt3/com/company/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/opt3/com/company/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/opt3/com/company/WeekMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/opt3/com/company/WeekMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Gebruiker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Gebruiker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Gerecht.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Gerecht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/WeekMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/WeekMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -26,7 +40,31 @@
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.gitconfig" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.11750883" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.company" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="opt3" />
@@ -37,9 +75,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WeekMenuTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opt3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="program.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="program.WeekMenuTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeekMenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opt3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.WeekMenuTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeekMenuTest.checkGetterSetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opt3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="program.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="program.WeekMenuTest" />
+      <option name="METHOD_NAME" value="checkGetterSetter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeekMenuTest.sorteerDagen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opt3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.WeekMenuTest" />
+      <option name="METHOD_NAME" value="sorteerDagen" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.WeekMenuTest.sorteerDagen" />
+        <item itemvalue="JUnit.WeekMenuTest.checkGetterSetter" />
+        <item itemvalue="JUnit.WeekMenuTest (1)" />
+        <item itemvalue="JUnit.WeekMenuTest" />
       </list>
     </recent_temporary>
   </component>
@@ -57,41 +161,71 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1593358249197">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1593542516048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593358249197" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1593527362851">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593542516048" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1593539331018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593527362851" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1593527362851">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593539331018" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1593544488635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593527362851" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1593527362851">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593544488635" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1593544488635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593527362851" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1593527362851">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593544488635" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1593544488635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593527362851" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593544488635" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1593544488635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593544488635" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1593540362959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593540362959" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1593516518777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593516518777" />
-    <state x="656" y="252" width="607" height="536" key="find.popup" timestamp="1593527725155">
+    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593539301815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="252" width="607" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593527725155" />
+    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1593539301815" />
+    <state x="731" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1593540370571">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="222" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593540370571" />
+    <state x="656" y="252" width="607" height="536" key="find.popup" timestamp="1593539634806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="252" width="607" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593539634806" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1593521967610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593521967610" />
-    <state x="143" y="225" key="search.everywhere.popup" timestamp="1593359711501">
+    <state x="143" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1593544154003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="143" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593359711501" />
+    <state x="143" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593544154003" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/company/Test/com/company/WeekMenuTest.java</url>
+          <line>9</line>
+          <properties class="com.company.WeekMenuTest" method="sorteerDagen">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

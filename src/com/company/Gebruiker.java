@@ -1,7 +1,7 @@
 package com.company;
 
-public class Gebruiker {
-    private String naam;
+public class Gebruiker implements Observer {
+    public String naam;
     private String achternaam;
 
     public Gebruiker(String naam, String achternaam) {
