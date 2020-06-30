@@ -152,7 +152,6 @@ public class Gerecht {
         }
     }
     public static void showAllGerechten(Gebruiker gebruiker){
-        System.out.println("kkr");
         for (Gerecht gerecht: allGerechten) {
             System.out.println("Naam: " + gerecht.getNaam() + " | soort: " + gerecht.soort + " | calorieën :" + gerecht.calorieën + " | Gezondheid :" + gerecht.gezondHeidsLabel + " | Bereidingstijd: " + gerecht.bereidingstijd + " | Vegetarisch: " + gerecht.vegetarisch + " | Laatst Gegeten: " + gerecht.laatstGegeten );
         }
