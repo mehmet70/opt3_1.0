@@ -73,7 +73,7 @@ public class Gerecht {
         java.util.Date yourDate1 = sdf.parse("2022-07-26");
         java.util.Date yourDate2 = sdf.parse("2015-07-26");
         java.util.Date yourDate3 = sdf.parse("2021-07-26");
-
+        
         Gerecht gerecht2 = new Gerecht("Pasta", "pasta", 400, 12, yourDate, true);
         Gerecht gerecht3 = new Gerecht("Friet", "aardappel", 700, 12, yourDate1, true);
         Gerecht gerecht4 = new Gerecht("Pannenkoek", "deeg", 900, 12, yourDate2, true);
@@ -136,6 +136,7 @@ public class Gerecht {
         }
         teller = 0;
         Integer input = scanner.nextInt();
+        //De teller zorgt ervoor dat ik niet 7 if statements hoef te maken en blijft dynamisch CODESMELL
         for (Gerecht gerecht: WeekMenu.getAllGerechten()) {
             teller ++;
             if (input.equals(teller)){

@@ -9,6 +9,8 @@ public class WeekMenu {
     public static ArrayList<Gerecht> allGerechten = new ArrayList<Gerecht>();
 
     public static void sorteerDagen() {
+
+        // Ik wou als eerst 7 variabelen met de namen maandag, dinsdag etc. maken, Vervolgens een foreach loop maken en met 7 if statements de variabele vullen. CODESMELL
         Collections.sort(allGerechten, Comparator.comparing(Gerecht::getLaatstGegeten));
 
         for(Gerecht gerecht : allGerechten)

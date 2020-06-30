@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59bc9cfa-fbce-4afa-9337-b0fa33e9b480" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/opt3/com/company/DagGerecht.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/opt3/com/company/DagGerecht.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/opt3/com/company/Gerecht.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/opt3/com/company/Gerecht.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/opt3/com/company/WeekMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/opt3/com/company/WeekMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DagGerecht.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DagGerecht.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Gerecht.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Gerecht.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/WeekMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/WeekMenu.java" afterDir="false" />
     </list>
