@@ -14,7 +14,6 @@ public class Gerecht {
     private Date laatstGegeten;
     private Boolean vegetarisch;
     private String gezondHeidsLabel;
-    private static ArrayList<Gerecht> allGerechten = new ArrayList<Gerecht>();
 
     public Gerecht(String naam, String soort, Integer calorieën, Integer bereidingstijd, Date laatstGegeten, Boolean vegetarisch) {
         this.naam = naam;
@@ -83,13 +82,13 @@ public class Gerecht {
         Gerecht gerecht7 = new Gerecht("Stampot", "groente", 20, 12, yourDate3, true);
         Gerecht gerecht8 = new Gerecht("Erwten Soep", "Soep", 20, 12, yourDate3, true);
 
-        allGerechten.add(gerecht2);
-        allGerechten.add(gerecht3);
-        allGerechten.add(gerecht4);
-        allGerechten.add(gerecht5);
-        allGerechten.add(gerecht6);
-        allGerechten.add(gerecht7);
-        allGerechten.add(gerecht8);
+        WeekMenu.addGerecht(gerecht2);
+        WeekMenu.addGerecht(gerecht3);
+        WeekMenu.addGerecht(gerecht4);
+        WeekMenu.addGerecht(gerecht5);
+        WeekMenu.addGerecht(gerecht6);
+        WeekMenu.addGerecht(gerecht7);
+        WeekMenu.addGerecht(gerecht8);
     }
 
     public static void gerechtToevoegen(Scanner scanner, Gebruiker gebruiker ) throws ParseException {
@@ -122,25 +121,22 @@ public class Gerecht {
         System.out.println("Gerecht gegevens:");
         System.out.println("|Naam: " + gerecht.getNaam() + " |Soort: " + gerecht.getSoort() + " |Calorieën: " + gerecht.getCalorieën() + " |Bereidingstijd: " + gerecht.getBereidingstijd() + " |Vegetarisch: " + gerecht.getVegetarisch() + " |Laatst Gegeten: " + gerecht.getLaatstGegeten());
         System.out.println(gerecht.getGezondHeidsLabel());
-        allGerechten.add(gerecht);
+        WeekMenu.addGerecht(gerecht);
 
     }
 
-    public static ArrayList<Gerecht> getAllGerechten() {
-        return allGerechten;
-    }
 
     public static void deleteGerecht( Gebruiker gebruiker) throws ParseException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("kies het gerecht dat u wilt verwijderen");
         int teller = 0;
-        for (Gerecht gerecht: allGerechten) {
+        for (Gerecht gerecht: WeekMenu.getAllGerechten()) {
             teller++;
             System.out.println(teller +". " + gerecht.getNaam());
         }
         teller = 0;
         Integer input = scanner.nextInt();
-        for (Gerecht gerecht: allGerechten) {
+        for (Gerecht gerecht: WeekMenu.getAllGerechten()) {
             teller ++;
             if (input.equals(teller)){
                 System.out.println("Weet u zeker dat u " + gerecht.getNaam() + " wilt verwijderen?");
@@ -149,7 +145,7 @@ public class Gerecht {
                 input = scanner.nextInt();
                 if (input.equals(1)){
                     System.out.println(gerecht.getNaam());
-                   allGerechten.remove(gerecht);
+                    WeekMenu.getAllGerechten().remove(gerecht);
                     Menu.startMenu(gebruiker);
                 }
                 if (input.equals(2)){
@@ -159,13 +155,10 @@ public class Gerecht {
         }
     }
     public static void showAllGerechten(){
-        for (Gerecht gerecht: allGerechten) {
+        for (Gerecht gerecht: WeekMenu.getAllGerechten()) {
             System.out.println("Naam: " + gerecht.getNaam() + " | soort: " + gerecht.soort + " | calorieën :" + gerecht.calorieën + " | Gezondheid :" + gerecht.gezondHeidsLabel + " | Bereidingstijd: " + gerecht.bereidingstijd + " | Vegetarisch: " + gerecht.vegetarisch + " | Laatst Gegeten: " + gerecht.laatstGegeten );
         }
     }
 
-    public static void Notify(){
-        System.out.println("Gegevens zijn opgeslagen!");
-    }
 
 }

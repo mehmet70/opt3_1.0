@@ -67,6 +67,7 @@ public final class Menu {
             System.out.println("6. Zondag");
             output = scanner.nextInt();
             DagGerecht.getGerechtPerDay(output);
+            System.out.println("1. terug naar menu");
             output = scanner.nextInt();
             if (output == 1 ){
                 startMenu(gebruiker);

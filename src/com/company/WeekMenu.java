@@ -1,24 +1,31 @@
 package com.company;
 
+import java.time.temporal.WeekFields;
 import java.util.*;
 
 public class WeekMenu {
     static String[] dagen = new String[]{"Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag"};
     static int dag = 0;
-    public static List<Gerecht> gesorteerdeGerecht = Gerecht.getAllGerechten();
+    public static ArrayList<Gerecht> allGerechten = new ArrayList<Gerecht>();
 
     public static void sorteerDagen() {
-        Collections.sort(gesorteerdeGerecht, Comparator.comparing(Gerecht::getLaatstGegeten));
+        Collections.sort(allGerechten, Comparator.comparing(Gerecht::getLaatstGegeten));
 
-        for(Gerecht gerecht : gesorteerdeGerecht)
+        for(Gerecht gerecht : allGerechten)
         {
-            if (dag == 6){
+            if (dag == 7){
                 dag = 0;
             }
-            System.out.println(dagen[dag] + ": " + gerecht.getNaam());
+            System.out.println(dagen[dag] + ": " + gerecht.getNaam() + " |laatst gegeten op: " + gerecht.getLaatstGegeten());
             dag ++;
         }
         dag = 0;
     }
+    public static void addGerecht(Gerecht gerecht){
+        allGerechten.add(gerecht);
+    }
 
+    public static ArrayList<Gerecht> getAllGerechten() {
+        return allGerechten;
+    }
 }
